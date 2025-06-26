@@ -19,8 +19,8 @@ Make sure you have **Node.js (LTS version)** installed.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mahima-37/SkylarHuamg.git
-cd Skylar Huang
+git clone https://github.com/Gemini064/profile.git
+cd profile
 ```
 ### 2. Install Dependencies
 
