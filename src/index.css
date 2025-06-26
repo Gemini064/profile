@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: CarosSoftBold;
+  src: url("./assets/fonts/CarosSoftBlack.woff") format('woff');
+}
+
+@font-face{
+  font-family: CarosSoftSemiBold;
+  src: url("./assets/fonts/CarosSoftBold.woff") format('woff');
+}
+
+@font-face{
+  font-family: CarosSoftNormal;
+  src: url("./assets/fonts/CarosSoft.woff") format('woff');
+}
+
+body{
+  font-family: "CarosSoftNormal", sans-serif;
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, #f9c5d1 0%, #c2a6ff 50%, #a18fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .mesh-background {
+    background: linear-gradient(
+      135deg,
+      #f9c5d1 0%,
+      #c2a6ff 25%,
+      #ce9ffc 50%,
+      #a18fff 75%,
+      #f9c5d1 100%
+    );
+    background-size: 400% 400%;
+    animation: gradient-x 15s ease infinite;
+  }
+}
+
+@theme {
+  /* COLORS */
+  --color-primary-50: #fef7f7;
+  --color-primary-100: #feeaea;
+  --color-primary-200: #fdd8db;
+  --color-primary-300: #f9c5d1;
+  --color-primary-400: #f4a1b1;
+  --color-primary-500: #eb7a95;
+  --color-primary-600: #d65780;
+  --color-primary-700: #b8416b;
+  --color-primary-800: #9b395f;
+  --color-primary-900: #843556;
+
+  --color-secondary-50: #f4f3ff;
+  --color-secondary-100: #ebe9fe;
+  --color-secondary-200: #d9d6fe;
+  --color-secondary-300: #c2a6ff;
+  --color-secondary-400: #a18fff;
+  --color-secondary-500: #8b5cf6;
+  --color-secondary-600: #7c3aed;
+  --color-secondary-700: #6d28d9;
+  --color-secondary-800: #5b21b6;
+  --color-secondary-900: #4c1d95;
+
+  --color-accent-50: #fef3f2;
+  --color-accent-100: #fee4e2;
+  --color-accent-200: #fecdca;
+  --color-accent-300: #fdaaa6;
+  --color-accent-400: #f97316;
+  --color-accent-500: #ef4444;
+  --color-accent-600: #dc2626;
+  --color-accent-700: #b91c1c;
+  --color-accent-800: #991b1b;
+  --color-accent-900: #7f1d1d;
+
+  --color-neutral-100: #f5f5f5;
+
+  /* FONTS */
+  --font-bold: CarosSoftBold, sans-serif;
+  --font-semibold: CarosSoftSemiBold, sans-serif;
+  --font-medium: CarosSoftNormal, sans-serif;
+  --font-normal: CarosSoftNormal, sans-serif;
+  
+}
+
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+}
+
