@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", to: "hero" },
+    { name: "About Me", to: "hero" },
     { name: "Experience", to: "experience" },
     { name: "Designs", to: "designs" },
     { name: "Developments", to: "developments" },
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
             whileTap={{ scale: 0.95 }}
           >
             <h3 className="text-xl font-bold gradient-text cursor-pointer">
-              SKYLAR HUANG
+              HELLO.
             </h3>
           </motion.div>
 
