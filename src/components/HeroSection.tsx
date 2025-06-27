@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { Link } from "react-scroll";
 import Navbar from "./Navbar/Navbar";
 
-const ROLES = ["Web Developer", "UI Designer"];
+const ROLES = ["Web Developer x UI Designer"];
 const PARTICLE_COUNT = 10;
 
 const HeroSection: React.FC = () => {
